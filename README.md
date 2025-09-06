@@ -1,9 +1,10 @@
 # prettier-plugin-css-singleline
 
+![npm](https://img.shields.io/npm/v/prettier-plugin-css-singleline) ![License](https://img.shields.io/badge/license-MIT-green) ![CI](https://github.com/zetafield/prettier-plugin-css-singleline/actions/workflows/ci.yml/badge.svg)  ![Publish](https://github.com/zetafield/prettier-plugin-css-singleline/actions/workflows/publish.yml/badge.svg)
+
 A Prettier plugin that formats single-declaration CSS rules onto one line when they fit within printWidth. This addresses a [long-standing community request](https://github.com/prettier/prettier/issues/5948) from 2019.
 
-<img src="./.github/assets/GzMH_UpWwAAguyk.jpeg" alt="CSS single-line demo" width="480" />
-<p><sub><a href="https://x.com/zhzhng/status/1959919057886396561">Tweet with context</a></sub></p>
+<img src="https://raw.githubusercontent.com/zetafield/prettier-plugin-css-singleline/main/.github/assets/GzMH_UpWwAAguyk.jpeg" alt="CSS single-line demo" width="480" />
 
 ## Features
 

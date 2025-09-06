@@ -6,6 +6,10 @@
   "files": [
     "index.mjs"
   ],
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  },
   "peerDependencies": {
     "prettier": "^3.0.0"
   },
