@@ -1,0 +1,13 @@
+.nav {
+  color: blue;
+  .item {
+    margin: 0;
+  }
+}
+
+.btn {
+  &--primary {
+    color: red;
+  }
+}
+
