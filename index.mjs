@@ -37,7 +37,13 @@ function selectorToString(selectorNode) {
             const v = n.value || '';
             return v.startsWith('::') ? v : v.startsWith(':') ? `:${v}` : `::${v}`;
           }
-          if (n.type === 'selector-combinator') return n.value || '';
+              if (n.type === 'selector-combinator') {
+                const v = n.value || '';
+                const t = v.trim();
+                // Ensure spaces around explicit combinators like '>', '+', '~'.
+                // If the combinator is already a space (descendant), normalize to single space.
+                return t === '' ? ' ' : ` ${t} `;
+              }
           return n.value || '';
         }).join('');
       }

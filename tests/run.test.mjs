@@ -75,6 +75,13 @@ describe('prettier-plugin-css-singleline', () => {
     expect(output).toBe(expected);
   });
 
+  it('preserves spaces around child combinator', async () => {
+    const dir = fixtureDir('child-combinator');
+    const output = await formatWithPlugin(path.join(dir, 'input.css'));
+    const expected = await readFile(path.join(dir, 'expected.css'));
+    expect(output).toBe(expected);
+  });
+
   it('formats Less single decl as single line when short', async () => {
     const dir = path.join(process.cwd(), 'tests', 'less', 'single-decl');
     const output = await formatWithPlugin(path.join(dir, 'input.less'));
